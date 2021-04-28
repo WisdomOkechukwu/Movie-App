@@ -208,9 +208,9 @@
 	    			</div>
 	    			<div class="title-in">
 	    				<div class="cate">
-	    					<span class="blue"><a href="#">Sci-fi</a></span>
+	    					<span class="blue"><a href="">Sci-fi</a></span>
 	    				</div>
-	    				<h6><a href="#">Interstellar</a></h6>
+	    				<h6><a href="/movie">Interstellar</a></h6>
 	    				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
 	    			</div>
 	    		</div>
@@ -222,7 +222,7 @@
 	    				<div class="cate">
 	    					<span class="yell"><a href="#">action</a></span>
 	    				</div>
-	    				<h6><a href="#">The revenant</a></h6>
+	    				<h6><a href="/movie">The revenant</a></h6>
 	    				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
 	    			</div>
 	    		</div>
@@ -234,7 +234,7 @@
 	    				<div class="cate">
 	    					<span class="green"><a href="#">comedy</a></span>
 	    				</div>
-	    				<h6><a href="#">Die hard</a></h6>
+	    				<h6><a href="/movie">Die hard</a></h6>
 	    				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
 	    			</div>
 	    		</div>
@@ -246,7 +246,7 @@
 	    				<div class="cate">
 	    					<span class="blue"><a href="#">Sci-fi</a></span> <span class="orange"><a href="#">advanture</a></span>
 	    				</div>
-	    				<h6><a href="#">The walk</a></h6>
+	    				<h6><a href="/movie">The walk</a></h6>
 	    				<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
 	    			</div>
 	    		</div>
