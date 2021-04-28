@@ -259,20 +259,12 @@
 						<div class="rate">
 							<i class="ion-android-star"></i>
 							<p><span>8.1</span> /10<br>
-								<span class="rv">56 Reviews</span>
+								<span class="rv">1.5M Reviews</span>
 							</p>
 						</div>
 						<div class="rate-star">
-							<p>Movie Rating  </p>
-							<i class="ion-ios-star"></i>
-							<i class="ion-ios-star"></i>
-							<i class="ion-ios-star"></i>
-							<i class="ion-ios-star"></i>
-							<i class="ion-ios-star"></i>
-							<i class="ion-ios-star"></i>
-							<i class="ion-ios-star"></i>
-							<i class="ion-ios-star"></i>
-							<i class="ion-ios-star-outline"></i>
+							<p>Price : </p>
+							<p>$45.00	  </p>
 						</div>
 					</div>
 					<div class="movie-tabs">
@@ -300,14 +292,8 @@
 						            			<h6>Director: </h6>
 						            			<p><a href="#">Joss Whedon</a></p>
 						            		</div>
-						            		<div class="sb-it">
-						            			<h6>Writer: </h6>
-						            			<p><a href="#">Joss Whedon,</a> <a href="#">Stan Lee</a></p>
-						            		</div>
-						            		<div class="sb-it">
-						            			<h6>Stars: </h6>
-						            			<p><a href="#">Robert Downey Jr,</a> <a href="#">Chris Evans,</a> <a href="#">Mark Ruffalo,</a><a href="#"> Scarlett Johansson</a></p>
-						            		</div>
+						            		
+						            		
 						            		<div class="sb-it">
 						            			<h6>Genres:</h6>
 						            			<p><a href="#">Action, </a> <a href="#"> Sci-Fi,</a> <a href="#">Adventure</a></p>

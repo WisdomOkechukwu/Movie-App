@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MovieController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('public.index');
-});
+
 
 Route::get('/movie', function () {
     return view('public.moviedetails');
@@ -28,3 +27,7 @@ Route::get('/search', function () {
 Route::get('/user', function () {
     return view('user.userprofile');
 });
+//Route to Homepage
+Route::get('/', [MovieController::class, 'homePage']);
+
+// Route::get('/show', [MovieController::class, 'show']);
