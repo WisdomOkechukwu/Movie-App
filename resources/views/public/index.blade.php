@@ -160,7 +160,7 @@
 						</li> --}}
 						<li class="dropdown first">
 							<a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
-							Wisdom OKechukwu 
+							Wisdom OKechukwu <span class="badge badge-light">2</span>
 							</a>
 							<ul class="dropdown-menu level1">
 								<li><a href="landing.html">Landing</a></li>

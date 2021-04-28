@@ -5762,7 +5762,17 @@ ul {
   color: #fff;
 }
 
+.badge-light {
+    background-color: #eceef3;
+    color: #2c2e3e;
+}
 
+.badge {
+  padding: .2em .4em;
+  font-weight: 500;
+  line-height: 1.3;
+  border-radius: 50px;
+}
 
 .redbtn {
   font-family: 'Dosis', sans-serif;
