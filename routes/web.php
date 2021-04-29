@@ -35,4 +35,6 @@ Route::get('/edit/{id}',[MovieController::class, 'findMovie']);
 
 Route::get('/add/{id}',[MovieController::class, 'addCart']);
 
-Route::get('/login',[AuthController::class, 'login']);
+Route::get('/login',[AuthController::class, 'login'])->name('login');
+
+Route::get('/register', [AuthController::class, 'register'])->name('register');
