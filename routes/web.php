@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\MovieController;
 use Illuminate\Support\Facades\Route;
 
@@ -16,18 +17,22 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/movie', function () {
-    return view('public.moviedetails');
-});
 
-Route::get('/search', function () {
-    return view('public.search');
-});
 
-Route::get('/user', function () {
-    return view('user.userprofile');
-});
+
+// Route::get('/user', function () {
+//     return view('public.moviedetails');
+// });
+
+
 //Route to Homepage
 Route::get('/', [MovieController::class, 'homePage']);
 
 // Route::get('/show', [MovieController::class, 'show']);
+
+//Single View for Video product
+Route::get('/edit/{id}',[MovieController::class, 'findMovie']);
+
+Route::get('/add/{id}',[MovieController::class, 'addCart']);
+
+Route::get('/login',[AuthController::class, 'login']);
