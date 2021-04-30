@@ -22,10 +22,14 @@ class MovieController extends Controller
         ]);
     }
 
-    public function findMovie($id)
+    public function findMovie($id,Request $request)
     {   
         //finding an id in a database
         $findMovie = Movie::find($id);
+
+        $request->session()->put('id',$id);
+        
+        
         // sending movie data to the view
         return view('public.moviedetails',[
             'findMovies' => $findMovie

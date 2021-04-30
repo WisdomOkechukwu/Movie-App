@@ -7051,12 +7051,16 @@ p.ceb-single {
 .overlay .login-content .social-btn-2 a i {
   margin-right: 10px;
 }
+
 .overlay .login-content .social-btn-2 .fb {
   background-color: #3a5a9a;
   margin-right: 15px;
 }
-.overlay .login-content .social-btn-2 .tw {
+.overlay .login-content .social-btn-2 {
   background-color: #00b9ef;
+}
+.tw{
+  background-color: red;
 }
 .slider {
   background: url('../images/uploads/slider-bg.jpg') no-repeat;
@@ -7892,11 +7896,11 @@ header .navbar-default .navbar-nav .dropdown .dropdown-menu.level1 .dropdown-tog
   display: flex;
   justify-content: space-between;
 }
-header .navbar-default .navbar-nav .dropdown .dropdown-menu.level1 li a {
+header .navbar-default .navbar-nav .dropdown .dropdown-menu.level1 li a button {
   padding: 10px 30px;
   color: #020d18;
 }
-header .navbar-default .navbar-nav .dropdown .dropdown-menu.level1 li a i {
+header .navbar-default .navbar-nav .dropdown .dropdown-menu.level1 li a i button {
   margin-top: 0;
 }
 header .navbar-default .navbar-nav .dropdown .dropdown-menu.level2 {

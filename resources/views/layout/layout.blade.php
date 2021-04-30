@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="en" class="no-js">
@@ -24,6 +25,104 @@
 
 </head>
 <body>
+    <div class="login-wrapper" id="login-content">
+        <div class="login-content">
+            <h3>Logout</h3>
+            <form method="post" action="{{ route('logout') }}">
+                @csrf
+                <div class="row">
+                    <div class="social-btn-2">
+                        
+                        <button type="submit" class="tw" href="#">Logout</button>
+                    </div>
+                </div>  
+            </form>
+            
+        </div>
+    </div>
+
+    <header class="ht-header">
+        <div class="container">
+            <nav class="navbar navbar-default navbar-custom">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header logo">
+                        <div class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <div id="nav-icon1">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <a href="index-2.html"><img class="logo" src="{{ asset('assets/images/logo1.png') }}" alt="" width="119" height="58"></a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav flex-child-menu menu-left">
+                            <li class="hidden">
+                                <a href="#page-top"></a>
+                            </li>
+                            {{-- <li class="dropdown first">
+                                <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown">
+                                Home <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </a>
+                                <ul class="dropdown-menu level1">
+                                    <li><a href="index-2.html">Home 01</a></li>
+                                    <li><a href="homev2.html">Home 02</a></li>
+                                    <li><a href="homev3.html">Home 03</a></li>
+                                </ul>
+                            </li> --}}
+                            >
+                        </ul>
+                        <ul class="nav navbar-nav flex-child-menu menu-right">
+                            {{-- <li class="dropdown first">
+                                <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                                pages <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </a>
+                                <ul class="dropdown-menu level1">
+                                    <li><a href="landing.html">Landing</a></li>
+                                    <li><a href="404.html">404 Page</a></li>
+                                    <li class="it-last"><a href="comingsoon.html">Coming soon</a></li>
+                                </ul>
+                            </li> --}}
+                            @auth
+                                
+                           
+                            <li class="dropdown first">
+                                <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
+                                {{ auth()->user()->name }} <span class="badge badge-light">2</span>
+                                </a>
+                                <ul class="dropdown-menu level1">
+                                    <li><a href="#">Profile</a></li>
+                                    <li><a href="#">Previous Purchase</a></li>
+                                    <li class="loginLink"><a href="#">LOG OUT</a></li> 
+                                </ul>	
+                            </li>   
+                            @endauth      
+                          
+                            @guest
+                                
+                            
+                            <li ><a href="{{ route('login') }}">LOG In</a></li>
+                            <li class="btn signupLink"><a href="{{ route('register') }}">sign up</a></li>
+                            @endguest
+                            
+    
+                        </ul>
+                    </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+            
+            <!-- top search form -->
+            <div class="top-search">
+                <select>
+                    <option value="united">TV show</option>
+                    <option value="saab">Others</option>
+                </select>
+                <input type="text" placeholder="Search for a movie, TV Show or celebrity that you are looking for">
+            </div>
+        </div>
+    </header>
     @yield('content')
     <!-- footer section-->
     <footer class="ht-footer">
