@@ -22,6 +22,7 @@
 	<!-- CSS files -->
 	<link rel="stylesheet" href="{{ asset('assets/css/plugins.css') }}">
 	<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA==" crossorigin="anonymous" />
 
 </head>
 <body>
@@ -54,7 +55,7 @@
                                 <span></span>
                             </div>
                         </div>
-                        <a href="index-2.html"><img class="logo" src="{{ asset('assets/images/logo1.png') }}" alt="" width="119" height="58"></a>
+                        <a href="{{ route('home') }}"><img class="logo" src="{{ asset('assets/images/logo1.png') }}" alt="" width="119" height="58"></a>
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse flex-parent" id="bs-example-navbar-collapse-1">
@@ -90,10 +91,16 @@
                            
                             <li class="dropdown first">
                                 <a class="btn btn-default dropdown-toggle lv1" data-toggle="dropdown" data-hover="dropdown">
-                                {{ auth()->user()->name }} <span class="badge badge-light">2</span>
+                                {{ auth()->user()->name }} 
+                                @if (session('cart'))
+                                <span class="badge badge-light">
+                                    {{ session('cart') }}
+                                </span>
+                                @endif
                                 </a>
                                 <ul class="dropdown-menu level1">
                                     <li><a href="#">Profile</a></li>
+                                    <li><a href="#">View Cart</a></li>
                                     <li><a href="#">Previous Purchase</a></li>
                                     <li class="loginLink"><a href="#">LOG OUT</a></li> 
                                 </ul>	
@@ -187,6 +194,7 @@
     <script src="{{ asset('assets/js/plugins.js') }}"></script>
     <script src="{{ asset('assets/js/plugins2.js') }}"></script>
     <script src="{{ asset('assets/js/custom.js') }}"></script>
+    
 </body>
 
 <!-- index14:58-->

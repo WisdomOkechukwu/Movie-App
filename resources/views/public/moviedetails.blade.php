@@ -2,6 +2,7 @@
 
 @section('content')
 
+
 <div class="hero mv-single-hero">
 	<div class="container">
 		<div class="row">
@@ -24,13 +25,19 @@
 					<img src="{{ asset("$findMovies->picture") }}" alt="">
 					
 					<div class="movie-btn">	
-						<div class="btn-transform transform-vertical red">
-							<div><a href="/add/{{ $findMovies->id }}" class="item item-1 redbtn"> <i class="ion-cash"></i>BUY</a></div>
-							<div><a href="/add/{{ $findMovies->id }}" class="item item-2 redbtn fancybox-media hvr-grow"><i class="ion-cash"></i></a></div>
-						</div>
-						<div class="btn-transform 	transform-vertical">
-							<div><a href="/add/{{ $findMovies->id }}" class="item item-1 yellowbtn"> <i class="ion-ios-cart"></i> Add To CArt</a></div>
-							<div><a href="/add/{{ $findMovies->id }}" class="item item-2 yellowbtn"><i class="ion-ios-cart"></i></a></div>
+						@if (session('cartstatus')=='true')
+							
+							
+						
+							<div class="btn-transform transform-vertical red">
+								<div><a href="#" class="item item-1 redbtn"></i> Already Added to Cart</a></div>
+							
+							</div>
+							
+						@endif
+						<div class="btn-transform 	transform-vertical ">
+							<div><a href="{{ route('CartAdd') }}" class="item item-1 yellowbtn"> <i class="ion-ios-cart"></i> Add To CArt</a></div>
+							<div><a href="{{ route('CartAdd') }}" class="item item-2 yellowbtn"><i class="ion-ios-cart"></i></a></div>
 						</div>
 					</div>
 				</div>
@@ -255,6 +262,7 @@
 		</div>
 	</div>
 </div>
+
 
 <!-- footer section-->
 @endsection

@@ -10,4 +10,10 @@ class Movie extends Model
     use HasFactory;
 
     protected $table = "movies";
+
+
+    public function users()
+    {
+        return $this->belongsToMany(User::class,'carts');
+    }
 }

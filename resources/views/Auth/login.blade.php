@@ -27,7 +27,7 @@
                     <h6 style="color:red;">{{ $message }}</h6>
                 @enderror
                 <div class="wrap-input100">
-                    <input class="input100" type="password" name="password" placeholder="Enter Password" value="{{ old('email') }}">
+                    <input class="input100" type="password" name="password" placeholder="Enter Password" value="">
                 </div>
 
                 <div class="container-login100-form-btn">

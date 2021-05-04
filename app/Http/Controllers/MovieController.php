@@ -2,20 +2,27 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Cart;
 use App\Models\Movie;
 use Illuminate\Http\Request;
 
 class MovieController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware(['auth'])->only('addCart');
-    }
+    
     
 
-    public function homePage(){
+    public function homePage(Request $request){
         // appending data from database movies into a variable
         $movie = Movie::all();
+        if(auth()->user()){
+        $cartval = Cart::select('*')
+                ->where('user_id', '=', auth()->user()->id)
+                ->where('status', '=', 'cart')
+                ->get();
+        $cartcounter =  $cartval->count();
+        $request->session()->put('cart',$cartcounter);
+        }
+
         // sending movie data to the view
         return view('public.index',[
             'movie' => $movie
@@ -23,7 +30,18 @@ class MovieController extends Controller
     }
 
     public function findMovie($id,Request $request)
-    {   
+    {       if(auth()->user()){
+            $cartval = Cart::select('*')
+            ->where('user_id', '=', auth()->user()->id)
+            ->where('status', '=', 'cart')
+            ->get();
+            $cartcounter =  $cartval->count();
+            $request->session()->put('cart',$cartcounter);
+
+            }
+
+
+
         //finding an id in a database
         $findMovie = Movie::find($id);
 
@@ -36,7 +54,7 @@ class MovieController extends Controller
         ]);
     }
 
-    public function addCart($id){
+    public function addCart(){
         return view('public.search');
     }
 

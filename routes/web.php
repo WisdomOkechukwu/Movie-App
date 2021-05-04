@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\MovieController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,25 +21,21 @@ use Illuminate\Support\Facades\Route;
 
 
 
-// Route::get('/user', function () {
-//     return view('public.moviedetails');
-// });
+Route::get('/cart', function () {
+    return view('public.search');
+});
 
 
 //Route to Homepage
 Route::get('/', [MovieController::class, 'homePage'])->name('home');
 
-// Route::get('/show', [MovieController::class, 'show']);
+Route::get('/show', [MovieController::class, 'addCart']);
 
 //Single View for Video product
 Route::get('/edit/{id}',[MovieController::class, 'findMovie']);
 
-Route::get('/add/{id}',[MovieController::class, 'addCart']);
 
-
-
-
-// Reigister Routes
+// Register Routes
 Route::get('/register', [AuthController::class, 'register'])->name('register');
 Route::post('/register', [AuthController::class, 'store']);
 
@@ -46,5 +43,8 @@ Route::post('/register', [AuthController::class, 'store']);
 Route::get('/login',[AuthController::class, 'login'])->name('login');
 Route::post('/login', [AuthController::class, 'SignIn']);
 
-//logout
+//logout Routes
 Route::post('/logout',[AuthController::class, 'Logout'])->name('logout');
+
+//Add to cart
+Route::get('/addCart' ,[CartController::class, 'addCart'])->name('CartAdd');
