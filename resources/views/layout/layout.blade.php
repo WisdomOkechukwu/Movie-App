@@ -22,7 +22,6 @@
 	<!-- CSS files -->
 	<link rel="stylesheet" href="{{ asset('assets/css/plugins.css') }}">
 	<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA==" crossorigin="anonymous" />
 
 </head>
 <body>
@@ -100,7 +99,7 @@
                                 </a>
                                 <ul class="dropdown-menu level1">
                                     <li><a href="#">Profile</a></li>
-                                    <li><a href="#">View Cart</a></li>
+                                    <li><a href="{{ route('cartlist') }}">View Cart</a></li>
                                     <li><a href="#">Previous Purchase</a></li>
                                     <li class="loginLink"><a href="#">LOG OUT</a></li> 
                                 </ul>	

@@ -7,9 +7,7 @@ use App\Models\Movie;
 use Illuminate\Http\Request;
 
 class MovieController extends Controller
-{
-    
-    
+{   
 
     public function homePage(Request $request){
         // appending data from database movies into a variable
@@ -54,9 +52,7 @@ class MovieController extends Controller
         ]);
     }
 
-    public function addCart(){
-        return view('public.search');
-    }
+    
 
     
 }

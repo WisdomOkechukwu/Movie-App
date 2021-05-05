@@ -21,9 +21,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/cart', function () {
-    return view('public.search');
-});
+
 
 
 //Route to Homepage
@@ -48,3 +46,7 @@ Route::post('/logout',[AuthController::class, 'Logout'])->name('logout');
 
 //Add to cart
 Route::get('/addCart' ,[CartController::class, 'addCart'])->name('CartAdd');
+//getting personal cart details
+Route::get('/cart', [CartController::class, 'usercart'])->name('cartlist');
+//delete Personal cart
+Route::get('/cartdel/{id}', [CartController::class, 'deletecart']);
