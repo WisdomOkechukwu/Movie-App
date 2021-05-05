@@ -10,6 +10,15 @@ class Movie extends Model
     use HasFactory;
 
     protected $table = "movies";
+    protected $fillable = [
+        'name',
+        'price',
+        'picture',
+        'director',
+        'genre',
+        'rating',
+        'runtime',
+    ];
 
 
     public function users()
