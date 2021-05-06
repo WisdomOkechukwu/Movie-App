@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\MovieController;
+use App\Http\Controllers\PurchaseController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -50,3 +51,6 @@ Route::get('/addCart' ,[CartController::class, 'addCart'])->name('CartAdd');
 Route::get('/cart', [CartController::class, 'usercart'])->name('cartlist');
 //delete Personal cart
 Route::get('/cartdel/{id}', [CartController::class, 'deletecart']);
+//purchase Page
+Route::get('/purchase',[PurchaseController::class, 'purchase'])->name('purchase');
+

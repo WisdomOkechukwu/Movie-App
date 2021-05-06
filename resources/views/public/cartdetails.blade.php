@@ -47,7 +47,7 @@
 						@endforeach
 						
 				</div>
-				<div><a href="/purchase" class="item item-1 redbtn"></i> Purchase ${{ $addition }}.00</a></div>		
+				<div><a href="{{ route('purchase') }}" class="item item-1 redbtn"></i> Purchase ${{ $addition }}.00</a></div>		
 				
 			</div>
 		</div>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Cart;
+use App\Models\Movie;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -75,13 +76,10 @@ class CartController extends Controller
     
     public function usercart()
     {
-
+        
         $user = User::find(auth()->user()->id);
         $users = $user->movie;
-        // foreach($users as $key){
-        //     echo $key->pivot->movie_id
-        //     .'<br>';
-        // }
+        
 
         return view('public.cartdetails',[
             'cartsetails' => $users
