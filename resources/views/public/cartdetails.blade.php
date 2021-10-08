@@ -19,9 +19,9 @@
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone-no">
 
-	<!-- CSS files -->
+	{{-- <!-- CSS files -->
 	<link rel="stylesheet" href="{{ asset('assets/css/plugins.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}"> 
+	<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">  --}}
 
     <link rel="stylesheet" href="{{ 'assets/css/style.css' }}">
 	<link rel="stylesheet" href="{{ 'assets/css/plugins.css' }}">
