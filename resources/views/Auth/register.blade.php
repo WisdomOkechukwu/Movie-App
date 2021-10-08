@@ -23,7 +23,7 @@
                     <h6 style="color:red;">{{ $message }}</h6>
                 @enderror
                 <div class="wrap-input100 ">
-                    <input class="input100" type="number" name="age" id="age" placeholder="Enter Age"
+                    <input class="input100" type="text" name="age" id="age" placeholder="Enter Age"
                     value="{{ old('age') }}">
                     
                 </div>

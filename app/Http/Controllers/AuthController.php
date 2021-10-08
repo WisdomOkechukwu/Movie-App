@@ -23,7 +23,7 @@ class AuthController extends Controller
         // ['required',Password::min(8)->mixedCase()->letters()->numbers()->symbols()->uncompromised()]
         $this->validate($request,[
             'name'=> 'required|max:225',
-            'age'=> 'required|max:2',
+            'age'=> 'required|max:2|numeric',
             'email'=>'required|email|unique:users,email',
             'password'=>['required','confirmed',Password::min(8)->mixedCase()->uncompromised()]
 
