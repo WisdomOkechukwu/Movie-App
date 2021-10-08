@@ -23,8 +23,8 @@
 	{{-- <link rel="stylesheet" href="{{ asset('assets/css/plugins.css') }}">
 	<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}"> --}}
 
-    <link rel="stylesheet" href="plugins.css">
-	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+	<link rel="stylesheet" href="{{ asset('assets/css/plugins.css') }}">
 
 </head>
 <body>
