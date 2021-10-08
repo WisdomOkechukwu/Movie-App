@@ -20,8 +20,11 @@
 	<meta name="format-detection" content="telephone-no">
 
 	<!-- CSS files -->
-	<link rel="stylesheet" href="{{ asset('assets/css/plugins.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+	{{-- <link rel="stylesheet" href="{{ asset('assets/css/plugins.css') }}">
+	<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}"> --}}
+
+    <link rel="stylesheet" href="plugins.css">
+	<link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -197,6 +200,11 @@
         </div>
     </footer>
     <!-- end of footer section-->
+
+    <script src="{{ asset('assets/js/jquery.js') }}"></script>
+    <script src="{{ asset('assets/js/plugins.js') }}"></script>
+    <script src="{{ asset('assets/js/plugins2.js') }}"></script>
+    <script src="{{ asset('assets/js/custom.js') }}"></script>
 
     <script src="{{ asset('assets/js/jquery.js') }}"></script>
     <script src="{{ asset('assets/js/plugins.js') }}"></script>
