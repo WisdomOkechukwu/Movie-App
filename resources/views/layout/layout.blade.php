@@ -20,11 +20,8 @@
 	<meta name="format-detection" content="telephone-no">
 
 	<!-- CSS files -->
-	<link rel="stylesheet" href="{{ asset('assets/css/plugins.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}"> 
-
-    <link rel="stylesheet" href="{{ 'assets/css/style.css' }}">
-	<link rel="stylesheet" href="{{ 'assets/css/plugins.css' }}">
+	<link rel="stylesheet" href="{{ secure_asset('assets/css/plugins.css') }}">
+	<link rel="stylesheet" href="{{ secure_asset('assets/css/style.css') }}"> 
 
 </head>
 <body>
@@ -201,15 +198,10 @@
     </footer>
     <!-- end of footer section-->
 
-    <script src="{{ asset('assets/js/jquery.js') }}"></script>
-    <script src="{{ asset('assets/js/plugins.js') }}"></script>
-    <script src="{{ asset('assets/js/plugins2.js') }}"></script>
-    <script src="{{ asset('assets/js/custom.js') }}"></script>
-
-    <script src="{{ 'assets/js/jquery.js' }}"></script>
-    <script src="{{ 'assets/js/plugins.js' }}"></script>
-    <script src="{{ 'assets/js/plugins2.js' }}"></script>
-    <script src="{{ 'assets/js/custom.js' }}"></script>
+    <script src="{{ secure_asset('assets/js/jquery.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/plugins.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/plugins2.js') }}"></script>
+    <script src="{{ secure_asset('assets/js/custom.js') }}"></script>
     
 </body>
 
