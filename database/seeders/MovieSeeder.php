@@ -48,66 +48,10 @@ class MovieSeeder extends Seeder
         // ]);
 
         $movie = Movie::find(2);
-        $movie->picture = 'mv-item4.jpg';
+        $movie->picture = 'assets/images/uploads/mv-item4.jpg';
         $movie ->save();
 
-        Movie::create([
-            'name' => 'BLUE VELVET',
-            'price' => 95,
-            'picture' => 'assets/images/uploads/mv-item6.jpg',
-            'director' => 'Desmond Young',
-            'genre' => 'Adventure',
-            'rating' => '8.1',
-            'runtime' =>'1hr 13min',
-        ]);
-        Movie::create([
-            'name' => 'GRAVITY',
-            'price' => 700,
-            'picture' => 'assets/images/uploads/mv-item7.jpg',
-            'director' => 'The Ruso Brothers',
-            'genre' => 'SciFi',
-            'rating' => '9.8',
-            'runtime' =>'2hr 45min',
-        ]);
-        Movie::create([
-            'name' => 'SOUTHPAW',
-            'price' => 950,
-            'picture' => 'assets/images/uploads/mv-item8.jpg',
-            'director' => 'Helder Postiga',
-            'genre' => 'Action',
-            'rating' => '9.7',
-            'runtime' =>'3hr 30min',
-        ]);
 
-        Movie::create([
-            'name' => 'SPECTRE',
-            'price' => 900,
-            'picture' => 'assets/images/uploads/mv-item10.jpg',
-            'director' => 'Helder Postiga',
-            'genre' => 'Action',
-            'rating' => '9.5',
-            'runtime' =>'3hr 5min',
-        ]);
-
-        Movie::create([
-            'name' => 'THE STRANGER THINGS',
-            'price' => 500,
-            'picture' => 'assets/images/uploads/mv-item11.jpg',
-            'director' => 'The Ruso Brothers',
-            'genre' => 'SciFi',
-            'rating' => '9.3',
-            'runtime' =>'3hr 5min',
-        ]);
-
-        Movie::create([
-            'name' => 'LA LA LAND',
-            'price' => 250,
-            'picture' => 'assets/images/uploads/mv-item12.jpg',
-            'director' => 'Leonard James',
-            'genre' => 'Adventure',
-            'rating' => '8.4',
-            'runtime' =>'2hr 13min',
-        ]);
 
 
 
