@@ -108,9 +108,18 @@
                           
                             @guest
                                 
+                            <style>
+                            .signLink{
+                                background-color: rgb(175, 70, 70);
+                                padding-left: 5px;
+                                padding-right: 5px;
+                                border-radius: 25px;
+                            }
+                            </style>
                             
                             <li ><a href="{{ route('login') }}">LOG In</a></li>
-                            <li class="btn signupLink"><a href="{{ route('register') }}">sign up</a></li>
+                            <li class="signLink"><a href="{{ route('register') }}">sign up</a></li>
+                            
                             @endguest
                             
     

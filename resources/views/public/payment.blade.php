@@ -44,7 +44,7 @@
       </div>
         
       {{-- <div class="btn"> --}}
-       <a class="btn" style="margin-top: 50px" href="{{  }}">Pay  ${{ $price }}</a> 
+       <a class="btn" style="margin-top: 50px" href="">Pay  ${{ $price }}</a> 
       {{-- </div>  --}}
       
     </div>

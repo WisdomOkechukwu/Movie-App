@@ -47,10 +47,12 @@ Route::post('/logout',[AuthController::class, 'Logout'])->name('logout');
 
 //Add to cart
 Route::get('/addCart' ,[CartController::class, 'addCart'])->name('CartAdd');
+
 //getting personal cart details
 Route::get('/cart', [CartController::class, 'usercart'])->name('cartlist');
 //delete Personal cart
 Route::get('/cartdel/{id}', [CartController::class, 'deletecart']);
+
 //purchase Page
 Route::get('/purchase',[PurchaseController::class, 'purchase'])->name('purchase');
 
